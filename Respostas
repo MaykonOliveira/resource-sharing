@@ -1,0 +1,16 @@
+4.1) Os dois programas conseguiram fazer todas as execuções?
+
+- Sim, os dois programas realizaram as execuções.
+
+4.2)   Houve   diferença  na   execução   dos  programas   considerando   a   versão   com   as   travas   e   a versão sem as travas?
+
+- Realizando a execução com travas foi verificado que nem sempre o tempo obtido na escrita do arquivo segue uma ordem cronologica, pois muitas vezes o processo captura a hora do sistema mas após isso o acesso ao arquivo é bloqueado, sendo necessária a espera e escrita posterior. Já o arquivo sem travas escreveu todas as saídas em ordem cronologica, mesmo que executados no mesmo horário.
+
+4.3) As duas execuções de cada container foram consecutivas ou houve alternância entre eles?
+
+- Conforme explicado no tópico anterior, houve uma alterância na execução de escrita entre os processos de cada container criado.
+
+4.4) As execuções foram todas em ordem cronológica? Ou seja, a execução atual sempre foi
+escrita em um horário posterior em relação a execução anterior?
+
+- Não, conforme explicado no item 4.2 as execuções com trava alternan entre os horários por conta da espera para acesso ao arquivo.
